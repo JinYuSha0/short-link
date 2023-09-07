@@ -29,7 +29,7 @@ export class AppController {
     this.accessService.create({
       shortId,
       isMobile: mobile,
-      ip: '113.110.32.232',
+      ip: ip,
       referer: getReferer(req),
     });
     res.status(302).redirect(mobile ? data.mobileUrl : data.pcUrl);
